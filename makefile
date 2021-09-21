@@ -5,19 +5,19 @@ run:
 	./a.out
 
 run0:
-	./a.out < input/0.txt
+	./a.out < input/0.lapl
 
 run1:
-	./a.out < input/1.txt
+	./a.out < input/1.lapl
 
 run2:
-	./a.out < input/2.txt
+	./a.out < input/2.lapl
 
 run3:
-	./a.out < input/3.txt
+	./a.out < input/3.lapl
 
 run4:
-	./a.out < input/4.txt
+	./a.out < input/4.lapl
 
 run5:
-	./a.out < input/5.txt
+	./a.out < input/5.lapl
