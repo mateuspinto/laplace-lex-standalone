@@ -1,0 +1,4 @@
+# Declaração de funções
+
+function soma:(Int, Int) Int = (x, y) => {x+y};
+let x:Int = soma(3, 2);
