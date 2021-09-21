@@ -15,6 +15,7 @@ as as
 from from
 match match
 data data
+default default
 
 type_int Int
 type_float Float
@@ -78,6 +79,7 @@ uppercase_identifier {uppercase}({downcase}|{uppercase}|{digit})*
 {from} {printf("Seria gerado um token FROM, lexema -> %s\n", yytext);}
 {match} {printf("Seria gerado um token MATCH, lexema -> %s\n", yytext);}
 {data} {printf("Seria gerado um token DATA, lexema -> %s\n", yytext);}
+{default} {printf("Seria gerado um token DEFAULT, lexema -> %s\n", yytext);}
 
 {type_int} {printf("Seria gerado um token TYPE_INT, lexema -> %s\n", yytext);}
 {type_float} {printf("Seria gerado um token TYPE_FLOAT, lexema -> %s\n", yytext);}

@@ -1,4 +1,3 @@
-# Um simples Hello, World! na linguagem Laplace
+# Exemplo mais simples possível: Hello, World! na linguagem Laplace
 
-let texto:[Char; 13] = "Hello, World!";
-let main:Int = printLn(texto);
+let main: Int = printLn("Hello, World!");
