@@ -14,6 +14,7 @@ import import
 as as
 from from
 match match
+data data
 
 type_int Int
 type_float Float
@@ -76,6 +77,7 @@ uppercase_identifier {uppercase}({downcase}|{uppercase}|{digit})*
 {as} {printf("Seria gerado um token AS, lexema -> %s\n", yytext);}
 {from} {printf("Seria gerado um token FROM, lexema -> %s\n", yytext);}
 {match} {printf("Seria gerado um token MATCH, lexema -> %s\n", yytext);}
+{data} {printf("Seria gerado um token DATA, lexema -> %s\n", yytext);}
 
 {type_int} {printf("Seria gerado um token TYPE_INT, lexema -> %s\n", yytext);}
 {type_float} {printf("Seria gerado um token TYPE_FLOAT, lexema -> %s\n", yytext);}
