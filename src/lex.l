@@ -21,6 +21,7 @@ type_int Int
 type_float Float
 type_char Char
 type_bool Bool
+type_struct Struct
 
 open_parenthesis "("
 close_parenthesis ")"
@@ -56,7 +57,7 @@ or "|"
 
 digit [0-9]
 number {digit}+
-downcase [a-z]
+lowercase [a-z]
 uppercase [A-Z]
 
 value_int ({plus}|{minus})?{number}
@@ -65,8 +66,8 @@ value_bool False|True
 value_char \'(.)\'
 value_string \"(.)*\"
 
-lowercase_identifier {downcase}({downcase}|{uppercase}|{digit})*
-uppercase_identifier {uppercase}({downcase}|{uppercase}|{digit})*
+lowercase_identifier {lowercase}({lowercase}|{uppercase}|{digit})*
+uppercase_identifier {uppercase}({lowercase}|{uppercase}|{digit})*
 
 %%
 "#"(.)*\n {}
@@ -86,6 +87,7 @@ uppercase_identifier {uppercase}({downcase}|{uppercase}|{digit})*
 {type_float} {printf("Seria gerado um token TYPE_FLOAT, lexema -> %s\n", yytext);}
 {type_char} {printf("Seria gerado um token TYPE_CHAR, lexema -> %s\n", yytext);}
 {type_bool} {printf("Seria gerado um token TYPE_BOOL, lexema -> %s\n", yytext);}
+{type_struct} {printf("Seria gerado um token TYPE_STRUCT, lexema -> %s\n", yytext);}
 
 {open_parenthesis} {printf("Seria gerado um token OPEN_PARENTHESIS, lexema -> %s\n", yytext);}
 {close_parenthesis} {printf("Seria gerado um token CLOSE_PARENTHESIS, lexema -> %s\n", yytext);}
