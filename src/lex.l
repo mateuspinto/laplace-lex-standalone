@@ -31,6 +31,7 @@ close_bracket "]"
 open_brace "{"
 close_brace "}"
 
+arrow "=>"
 colon ":"
 comma ","
 semicolon ";"
@@ -95,6 +96,7 @@ uppercase_identifier {uppercase}({downcase}|{uppercase}|{digit})*
 {open_brace} {printf("Seria gerado um token OPEN_BRACE, lexema -> %s\n", yytext);}
 {close_brace} {printf("Seria gerado um token CLOSE_BRACE, lexema -> %s\n", yytext);}
 
+{arrow} {printf("Seria gerado um token ARROW, lexema -> %s\n", yytext);}
 {colon} {printf("Seria gerado um token COLON, lexema -> %s\n", yytext);}
 {comma} {printf("Seria gerado um token COMMA, lexema -> %s\n", yytext);}
 {semicolon} {printf("Seria gerado um token SEMICOLON, lexema -> %s\n", yytext);}
