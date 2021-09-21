@@ -1,6 +1,6 @@
 # Exemplo de listas: mapeamento para calculo de idade
 
-let anosDeNascimento: [Int; 5] = [1960, 1985, 2002, 1999];
-let idades: [Int; 5] = anosDeNascimento.map((x) => {2020 - x});
+let anosDeNascimento: [Int; 4] = [1960, 1985, 2002, 1999];
+let idades: [Int; 4] = anosDeNascimento.map((x) => {2020 - x});
 
 let main: Int = printLn(idades);
